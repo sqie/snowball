@@ -1,2 +1,4 @@
 # snowball
-simple java.swing game
+Coded in Java (java.swing), images illustrated in Photoshop.
+
+
