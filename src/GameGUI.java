@@ -221,15 +221,15 @@ public class GameGUI extends JFrame implements KeyListener{
 	//run the GUI
 	public static void main(String [] args) {
 		
+		String instructions = "SNOWBALL\n----------------------------\nUse the arrow keys to move around.\nThe game ends when you get hit by a snowball.";
+		instructions += "\nYou get a two second warning of an incoming snowball from its shadow.";
+		JOptionPane.showMessageDialog(null, instructions);
+		
 		GameGUI game = new GameGUI();
 		boolean gameOver = false;
 		
 		ZonedDateTime start = ZonedDateTime.now();
 		int curSec = 0;
-		
-		String instructions = "SNOWBALL\n----------------------------\nUse the arrow keys to move around.\nThe game ends when you get hit by a snowball.";
-		instructions += "\nYou get a two second warning of an incoming snowball from its shadow.";
-		JOptionPane.showMessageDialog(game, instructions);
 		
 		//while the game isn't over
 		while(!gameOver) {
